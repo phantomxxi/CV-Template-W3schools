@@ -1,0 +1,231 @@
+/* default setting */
+:root {
+  --primary-color: #009688;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.row {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding-top: 2rem;
+  background-color: #f8f8f8;
+}
+/* main */
+.main__content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 2fr;
+}
+.main__content-left,
+.content-right__workex,
+.content-right__education {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* left content */
+.main__ava {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.main__content-left {
+  align-self: flex-start;
+  padding-bottom: 6rem;
+}
+.main__ava img,
+.main__ava h3 {
+  grid-row: 1 / -1;
+}
+.main__ava img {
+  grid-column: 1 / -1;
+}
+.main__ava h3 {
+  align-self: flex-end;
+  grid-column: 1 / -1;
+  padding: 1rem 1.5rem;
+  font-size: 3rem;
+  font-weight: normal;
+}
+.content-left__info,
+.content-left__skill,
+.content-left__languages {
+  padding: 1.8rem;
+  padding-bottom: 0;
+  color: #777;
+}
+/* person info */
+.person__info-list {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+.person__info-item + .person__info-item {
+  margin-top: 1.5rem;
+}
+.person__info-item i {
+  color: var(--primary-color);
+  min-width: 3rem;
+}
+/* left skill */
+.skill__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.skill__title i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: var(--primary-color);
+}
+.skill__heading {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+.person-skill__item {
+  margin-top: 1rem;
+}
+.skill-name {
+  margin-bottom: 1.5rem;
+}
+.skill-progress,
+.language-progress {
+  background-color: rgb(230, 230, 230);
+  width: 100%;
+  height: 1.8rem;
+  border-radius: 10px;
+  z-index: 2;
+}
+.skill-progress_bar,
+.language-progress_bar {
+  height: inherit;
+  z-index: 3;
+  border-radius: inherit;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+.skill-progress_bar--90 {
+  width: 90%;
+}
+.skill-progress_bar--80 {
+  width: 80%;
+}
+.skill-progress_bar--75 {
+  width: 75%;
+}
+.skill-progress_bar--50,
+.language-progress_bar--50 {
+  width: 50%;
+}
+.language-progress {
+  height: 2.5rem;
+}
+.language-progress_bar--25 {
+  width: 25%;
+}
+/*  */
+.main__content-right > * {
+  margin-bottom: 3rem;
+}
+.content-right__workex,
+.content-right__education {
+  padding: 4rem 2rem;
+}
+.content-right__heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.content-right__heading h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #777;
+}
+.content-right__heading i {
+  min-width: 5rem;
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+/*  */
+.content-right-item:not(:last-child) {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+.content-right-item + .content-right-item {
+  margin-top: 2rem;
+}
+.right-item__title {
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0.8;
+  color: rgb(97, 96, 96);
+}
+.right-item__timework {
+  margin: 1rem 0 1.3rem;
+  color: var(--primary-color);
+}
+.date_bold {
+  color: white;
+  border-radius: 4px;
+  padding: 0.2rem 0.8rem;
+  background-color: var(--primary-color);
+}
+.right-item__timework i {
+  margin-right: 0.5rem;
+}
+/* footer */
+.footer {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 3rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-icon__list {
+  margin: 1.5rem 0;
+}
+.footer-icon__link {
+  color: #fff;
+}
+.footer-icon__link:hover {
+  color: #777;
+}
